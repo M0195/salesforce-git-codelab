@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Render DOM Elements Conditionally" icon-name="custom:custom24">
+        <div class="slds-m-around_medium">
+            <lightning-input type="checkbox" name="checkbo-input" label="Show Deatils" onchange={changeHandler} ></lightning-input>
+            <template if:true={areDetailsVisible}>
+                    <div class="slds-m-vertical_medium">
+                        These are the details!
+                    </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

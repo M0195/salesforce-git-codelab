@@ -1,0 +1,15 @@
+<template>
+   <div> <lightning-combobox
+    name={picklistlabel}
+    label ={picklistlabel}
+    options={options} 
+    placeholder="--None--"
+    value={selectedValue}
+    onchange={changeHandler}
+  >
+  </lightning-combobox>
+</div>
+  <div if:true={error} style="margin-left:3%">
+    <b style="color: red;">{error}</b>
+</div>
+</template>
